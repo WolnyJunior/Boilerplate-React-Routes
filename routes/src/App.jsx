@@ -21,11 +21,13 @@ function App() {
         <Routes>
           <Route path='/login' element={loginRedirect(<Signin />)}></Route>
           <Route path='/cadastro' element={loginRedirect(<Signup />)}></Route>
+          {/* Colocar rotas que não necessitam de autenticação aqui. */}
 
           {isAutenticated ?
             (
               <>
                 <Route path='/' Component={Home}></Route>
+                {/* Colocar rotas que precisam de autenticação aqui */}
               </>
             )
             :
