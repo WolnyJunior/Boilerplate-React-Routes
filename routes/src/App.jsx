@@ -3,11 +3,12 @@ import './App.css'
 import Signin from './pages/Signin/Signin'
 import Signup from './pages/Signup/Signup'
 import Home from './pages/Home/Home'
+import Bicicletas from './pages/Bicicletas/Bicicletas'
 
 
 function App() {
 
-  const isAutenticated = true //Verifica se o usuário está autenticado
+  const isAutenticated = false //Verifica se o usuário está autenticado
   function loginRedirect(componente) {
     if (isAutenticated) {
       return <Navigate to='/' replace /> //O `Navigate` é um componente que realiza o redirecionamento do usuário para outra rota.
@@ -27,6 +28,7 @@ function App() {
             (
               <>
                 <Route path='/' Component={Home}></Route>
+                <Route path='/bicicletas' Component={Bicicletas}></Route>
                 {/* Colocar rotas que precisam de autenticação aqui */}
               </>
             )
