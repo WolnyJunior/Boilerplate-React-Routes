@@ -41,8 +41,5 @@ A função loginRedirect tem o propósito de redirecionar o usuário para a pág
 2. <strong>Redirecionamento Global</strong>
     - <strong>Objetivo:</strong> Redirecionar usuários para uma página específica quando a URL acessada não corresponde a nenhuma rota definida.
 
-### Resumo
-    O `path='*'` é utilizado para capturar todas as URLs que não correspondem a rotas definidas. Isso permite gerenciar URLs não reconhecidas e redirecionar usuários de acordo com as necessidades da aplicação.
-
-
-
+## Resumo
+- O `path='*'` é utilizado para capturar todas as URLs que não correspondem a rotas definidas. Isso permite gerenciar URLs não reconhecidas e redirecionar usuários de acordo com as necessidades da aplicação.
