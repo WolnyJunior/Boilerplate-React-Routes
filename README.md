@@ -43,3 +43,6 @@ A função loginRedirect tem o propósito de redirecionar o usuário para a pág
 
 ## Resumo
 - O `path='*'` é utilizado para capturar todas as URLs que não correspondem a rotas definidas. Isso permite gerenciar URLs não reconhecidas e redirecionar usuários de acordo com as necessidades da aplicação.
+
+## Componente <Link> no React-Router-DOM
+- O componente `<Link>` é usado para criar links internos em uma aplicação React que utiliza o React Router para roteamento. Diferente de um link HTML padrão, o `<Link>` evita o carregamento completo da página ao navegar para outra rota. Em vez disso, ele realiza uma navegação client-side, proporcionando uma experiência de usuário mais rápida e fluida.
